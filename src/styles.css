@@ -1,0 +1,33 @@
+@keyframes movingGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.moving-gradient-text {
+  position: relative;
+  display: inline-block;
+}
+
+.moving-gradient-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, rgba(29,78,216,1) 0%, rgba(220,38,38,1) 50%, rgba(129,0,255,1) 100%);
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: movingGradient 3s linear infinite;
+  display: inline-block;
+}
