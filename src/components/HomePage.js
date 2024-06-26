@@ -15,9 +15,10 @@ function CompleteComponent() {
   };
 
   const movingGradientText = {
-    background: 'linear-gradient(90deg, rgba(29,78,216,1) 0%, rgba(220,38,38,1) 50%, rgba(129,0,255,1) 100%)',
+    // background: 'linear-gradient(90deg, rgba(29,78,216,1) 0%, rgba(220,38,38,1) 50%, rgba(129,0,255,1) 100%)',
+  
     WebkitBackgroundClip: 'text',
-    WebkitTextFillColor: 'transparent',
+    WebkitTextFillColor: 'white',
     animation: 'movingGradient 3s linear infinite',
     display: 'inline',
     backgroundSize: '200% auto',

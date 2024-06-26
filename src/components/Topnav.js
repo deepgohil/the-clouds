@@ -92,8 +92,7 @@ import React, { useState } from 'react';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import './TabTransition.css'; // Ensure this CSS file exists with transition styles
 import HomePage from './HomePage';
-import TextToSpeech from './TextTospeech';
-import SpeechToText from './Speechtotext';
+
 import DisabilityForm from './DisabilityForm';
 // Import additional components as necessary
 
@@ -101,10 +100,6 @@ const TabContent = ({ activeTab }) => {
   switch (activeTab) {
     case 'Extension':
       return <HomePage />;
-    case 'TextToSpeech':
-      return <TextToSpeech />;
-    case 'SpeechToText':
-      return <SpeechToText />;
     case 'Groups':
       // Placeholder for the Login component
       return <DisabilityForm/>;
